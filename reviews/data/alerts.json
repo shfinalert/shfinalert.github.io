@@ -1,0 +1,689 @@
+{
+  "schema_version": 3,
+  "kind": "alerts",
+  "sample": true,
+  "badge": "DEMO",
+  "generated_at": "2026-07-04T16:49:18.774787+00:00",
+  "site": {
+    "title": "shfinalert",
+    "retention_days": 30
+  },
+  "chart_timeframes": [
+    "1M",
+    "1W",
+    "1D",
+    "4h",
+    "1h",
+    "30m"
+  ],
+  "alert_timeframes": [
+    "1d",
+    "4h",
+    "1h",
+    "30m"
+  ],
+  "days": [
+    {
+      "date": "2026-03-19",
+      "alerts": [
+        {
+          "id": "2026-03-19-jpm-1d-20260319T1300-long_lower_tail",
+          "market": "stocks",
+          "symbol": "JPM",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-19T13:00:00+00:00",
+          "trigger_ts": "2026-03-19",
+          "title": "JPM · 1d · 긴 아랫꼬리",
+          "rule_id": "long_lower_tail",
+          "rule_label": "긴 아랫꼬리",
+          "direction": "buy",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__jpm__1M.json",
+            "1W": "data/charts/stocks__jpm__1W.json",
+            "1D": "data/charts/stocks__jpm__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 긴 아랫꼬리 (완성봉)",
+              "value": "2026-03-19",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "회색 / 회색",
+              "pass": false
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 안",
+              "pass": false
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "37.8 / 42.0",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-16",
+      "alerts": [
+        {
+          "id": "2026-03-16-msft-1d-20260316T1300-long_lower_tail",
+          "market": "stocks",
+          "symbol": "MSFT",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-16T13:00:00+00:00",
+          "trigger_ts": "2026-03-16",
+          "title": "MSFT · 1d · 긴 아랫꼬리",
+          "rule_id": "long_lower_tail",
+          "rule_label": "긴 아랫꼬리",
+          "direction": "buy",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__msft__1M.json",
+            "1W": "data/charts/stocks__msft__1W.json",
+            "1D": "data/charts/stocks__msft__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 긴 아랫꼬리 (완성봉)",
+              "value": "2026-03-16",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "회색 / 회색",
+              "pass": false
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 걸침",
+              "pass": false
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "42.6 / 42.6",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-11",
+      "alerts": [
+        {
+          "id": "2026-03-11-meta-1d-20260311T1300-long_lower_tail",
+          "market": "stocks",
+          "symbol": "META",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-11T13:00:00+00:00",
+          "trigger_ts": "2026-03-11",
+          "title": "META · 1d · 긴 아랫꼬리",
+          "rule_id": "long_lower_tail",
+          "rule_label": "긴 아랫꼬리",
+          "direction": "buy",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__meta__1M.json",
+            "1W": "data/charts/stocks__meta__1W.json",
+            "1D": "data/charts/stocks__meta__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 긴 아랫꼬리 (완성봉)",
+              "value": "2026-03-11",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "회색 / 회색",
+              "pass": false
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 안",
+              "pass": false
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "49.1 / 49.1",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-10",
+      "alerts": [
+        {
+          "id": "2026-03-10-amzn-1d-20260310T1300-long_lower_tail",
+          "market": "stocks",
+          "symbol": "AMZN",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-10T13:00:00+00:00",
+          "trigger_ts": "2026-03-10",
+          "title": "AMZN · 1d · 긴 아랫꼬리",
+          "rule_id": "long_lower_tail",
+          "rule_label": "긴 아랫꼬리",
+          "direction": "buy",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__amzn__1M.json",
+            "1W": "data/charts/stocks__amzn__1W.json",
+            "1D": "data/charts/stocks__amzn__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 긴 아랫꼬리 (완성봉)",
+              "value": "2026-03-10",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "파랑(최저) / 회색",
+              "pass": false
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 안",
+              "pass": false
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "47.0 / 47.4",
+              "pass": true
+            }
+          ],
+          "note": null
+        },
+        {
+          "id": "2026-03-10-dis-1d-20260310T1300-long_lower_tail",
+          "market": "stocks",
+          "symbol": "DIS",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-10T13:00:00+00:00",
+          "trigger_ts": "2026-03-10",
+          "title": "DIS · 1d · 긴 아랫꼬리",
+          "rule_id": "long_lower_tail",
+          "rule_label": "긴 아랫꼬리",
+          "direction": "buy",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__dis__1M.json",
+            "1W": "data/charts/stocks__dis__1W.json",
+            "1D": "data/charts/stocks__dis__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 긴 아랫꼬리 (완성봉)",
+              "value": "2026-03-10",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "파랑(최저) / 주황(평균이상)",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 안",
+              "pass": false
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "38.8 / 42.2",
+              "pass": true
+            }
+          ],
+          "note": null
+        },
+        {
+          "id": "2026-03-10-cost-1d-20260310T1300-shootingstar",
+          "market": "stocks",
+          "symbol": "COST",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-10T13:00:00+00:00",
+          "trigger_ts": "2026-03-10",
+          "title": "COST · 1d · 슈팅스타",
+          "rule_id": "shootingstar",
+          "rule_label": "슈팅스타",
+          "direction": "sell",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__cost__1M.json",
+            "1W": "data/charts/stocks__cost__1W.json",
+            "1D": "data/charts/stocks__cost__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 슈팅스타 (완성봉)",
+              "value": "2026-03-10",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "회색 / 주황(평균이상)",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 안",
+              "pass": false
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "55.2 / 54.9",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-06",
+      "alerts": [
+        {
+          "id": "2026-03-06-aapl-1d-20260306T1300-hangingman",
+          "market": "stocks",
+          "symbol": "AAPL",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-06T13:00:00+00:00",
+          "trigger_ts": "2026-03-06",
+          "title": "AAPL · 1d · 교수형",
+          "rule_id": "hangingman",
+          "rule_label": "교수형",
+          "direction": "sell",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__aapl__1M.json",
+            "1W": "data/charts/stocks__aapl__1W.json",
+            "1D": "data/charts/stocks__aapl__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 교수형 (완성봉)",
+              "value": "2026-03-06",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "회색 / 주황(평균이상)",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 아래 (존 밖)",
+              "pass": true
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "44.9 / 47.2",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-03",
+      "alerts": [
+        {
+          "id": "2026-03-03-tsla-1d-20260303T1300-long_lower_tail",
+          "market": "stocks",
+          "symbol": "TSLA",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-03T13:00:00+00:00",
+          "trigger_ts": "2026-03-03",
+          "title": "TSLA · 1d · 긴 아랫꼬리",
+          "rule_id": "long_lower_tail",
+          "rule_label": "긴 아랫꼬리",
+          "direction": "buy",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__tsla__1M.json",
+            "1W": "data/charts/stocks__tsla__1W.json",
+            "1D": "data/charts/stocks__tsla__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 긴 아랫꼬리 (완성봉)",
+              "value": "2026-03-03",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "주황(평균이상) / 회색",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 아래 (존 밖)",
+              "pass": true
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "40.0 / 43.6",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "alerts": [
+        {
+          "id": "2026-03-02-dis-1d-20260302T1300-hangingman",
+          "market": "stocks",
+          "symbol": "DIS",
+          "timeframe": "1d",
+          "triggered_at": "2026-03-02T13:00:00+00:00",
+          "trigger_ts": "2026-03-02",
+          "title": "DIS · 1d · 교수형",
+          "rule_id": "hangingman",
+          "rule_label": "교수형",
+          "direction": "sell",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__dis__1M.json",
+            "1W": "data/charts/stocks__dis__1W.json",
+            "1D": "data/charts/stocks__dis__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 교수형 (완성봉)",
+              "value": "2026-03-02",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "주황(평균이상) / 회색",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 걸침",
+              "pass": false
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "44.4 / 46.0",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-02-11",
+      "alerts": [
+        {
+          "id": "2026-02-11-aapl-1d-20260211T1300-shootingstar",
+          "market": "stocks",
+          "symbol": "AAPL",
+          "timeframe": "1d",
+          "triggered_at": "2026-02-11T13:00:00+00:00",
+          "trigger_ts": "2026-02-11",
+          "title": "AAPL · 1d · 슈팅스타",
+          "rule_id": "shootingstar",
+          "rule_label": "슈팅스타",
+          "direction": "sell",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__aapl__1M.json",
+            "1W": "data/charts/stocks__aapl__1W.json",
+            "1D": "data/charts/stocks__aapl__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 슈팅스타 (완성봉)",
+              "value": "2026-02-11",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "회색 / 파랑(최저)",
+              "pass": false
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 안",
+              "pass": false
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "60.9 / 57.1",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-02-06",
+      "alerts": [
+        {
+          "id": "2026-02-06-msft-1d-20260206T1300-hangingman",
+          "market": "stocks",
+          "symbol": "MSFT",
+          "timeframe": "1d",
+          "triggered_at": "2026-02-06T13:00:00+00:00",
+          "trigger_ts": "2026-02-06",
+          "title": "MSFT · 1d · 교수형",
+          "rule_id": "hangingman",
+          "rule_label": "교수형",
+          "direction": "sell",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__msft__1M.json",
+            "1W": "data/charts/stocks__msft__1W.json",
+            "1D": "data/charts/stocks__msft__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 교수형 (완성봉)",
+              "value": "2026-02-06",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "주황(평균이상) / 주황(평균이상)",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 아래 (존 밖)",
+              "pass": true
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "30.5 / 36.3",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "alerts": [
+        {
+          "id": "2026-02-05-xom-1d-20260205T1300-hangingman",
+          "market": "stocks",
+          "symbol": "XOM",
+          "timeframe": "1d",
+          "triggered_at": "2026-02-05T13:00:00+00:00",
+          "trigger_ts": "2026-02-05",
+          "title": "XOM · 1d · 교수형",
+          "rule_id": "hangingman",
+          "rule_label": "교수형",
+          "direction": "sell",
+          "score": null,
+          "probability": null,
+          "frames": {
+            "1M": "data/charts/stocks__xom__1M.json",
+            "1W": "data/charts/stocks__xom__1W.json",
+            "1D": "data/charts/stocks__xom__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 교수형 (완성봉)",
+              "value": "2026-02-05",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "회색 / 주황(평균이상)",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 위 (존 밖)",
+              "pass": true
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "75.6 / 69.2",
+              "pass": true
+            }
+          ],
+          "note": null
+        }
+      ]
+    },
+    {
+      "date": "2024-12-23",
+      "alerts": [
+        {
+          "id": "2024-12-23-cost-1d-20241223T1300-hangingman",
+          "market": "stocks",
+          "symbol": "COST",
+          "timeframe": "1d",
+          "triggered_at": "2024-12-23T13:00:00+00:00",
+          "trigger_ts": "2024-12-23",
+          "title": "COST · 1d · 교수형",
+          "rule_id": "hangingman",
+          "rule_label": "교수형",
+          "direction": "sell",
+          "score": null,
+          "probability": {
+            "win_rate": 0.503,
+            "base_rate": 0.476,
+            "lift": 1.06,
+            "n": 2946,
+            "target": "13봉 뒤 종가 < 진입가(다음 시가) — 측정 곡선상 h4~8 피크(×1.07)",
+            "source_run": "20260703-hangingman-volred-fb0out__20260703T1102"
+          },
+          "frames": {
+            "1M": "data/charts/stocks__cost__1M.json",
+            "1W": "data/charts/stocks__cost__1W.json",
+            "1D": "data/charts/stocks__cost__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 교수형 (완성봉)",
+              "value": "2024-12-23",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "회색 / 빨강(스파이크)",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 아래 (존 밖)",
+              "pass": true
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "49.9 / 53.5",
+              "pass": true
+            }
+          ],
+          "note": "이 조합은 전수 측정 완료: 1,987심볼·6,965이벤트에서 전/후반 일관 리프트 ×1.05~1.06, 승률 곡선상 h4~8 구간이 피크(×1.07) — 첫 봉 추격 진입은 기저 이하(45.7%)라 불리."
+        }
+      ]
+    },
+    {
+      "date": "2024-09-20",
+      "alerts": [
+        {
+          "id": "2024-09-20-xom-1d-20240920T1300-hangingman",
+          "market": "stocks",
+          "symbol": "XOM",
+          "timeframe": "1d",
+          "triggered_at": "2024-09-20T13:00:00+00:00",
+          "trigger_ts": "2024-09-20",
+          "title": "XOM · 1d · 교수형",
+          "rule_id": "hangingman",
+          "rule_label": "교수형",
+          "direction": "sell",
+          "score": null,
+          "probability": {
+            "win_rate": 0.503,
+            "base_rate": 0.476,
+            "lift": 1.06,
+            "n": 2946,
+            "target": "13봉 뒤 종가 < 진입가(다음 시가) — 측정 곡선상 h4~8 피크(×1.07)",
+            "source_run": "20260703-hangingman-volred-fb0out__20260703T1102"
+          },
+          "frames": {
+            "1M": "data/charts/stocks__xom__1M.json",
+            "1W": "data/charts/stocks__xom__1W.json",
+            "1D": "data/charts/stocks__xom__1D.json"
+          },
+          "conditions": [
+            {
+              "name": "캔들 패턴: 교수형 (완성봉)",
+              "value": "2024-09-20",
+              "pass": true
+            },
+            {
+              "name": "거래량 등급 (t / t-1)",
+              "value": "빨강(스파이크) / 회색",
+              "pass": true
+            },
+            {
+              "name": "FB0(하양 존) 대비 몸통 위치",
+              "value": "몸통이 FB0 위 (존 밖)",
+              "pass": true
+            },
+            {
+              "name": "RSI fast / slow",
+              "value": "49.7 / 50.2",
+              "pass": true
+            }
+          ],
+          "note": "이 조합은 전수 측정 완료: 1,987심볼·6,965이벤트에서 전/후반 일관 리프트 ×1.05~1.06, 승률 곡선상 h4~8 구간이 피크(×1.07) — 첫 봉 추격 진입은 기저 이하(45.7%)라 불리."
+        }
+      ]
+    }
+  ]
+}

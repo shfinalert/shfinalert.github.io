@@ -1,0 +1,95 @@
+{
+  "bars_rendered": 220,
+  "chart_data_path": "/data/research/raw/stocks/us/AVGO/1d/ohlcv.parquet",
+  "explain": {
+    "candidate_labels": [
+      "butterfly"
+    ],
+    "d_confirm_ts": "2018-12-18T00:00:00+00:00",
+    "d_mode": "price_reached",
+    "direction": -1,
+    "pattern": "harmonic_butterfly",
+    "points": {
+      "a": {
+        "price": 21.76099967956543,
+        "ts": "2018-12-06T00:00:00+00:00"
+      },
+      "b": {
+        "price": 24.031999588012695,
+        "ts": "2018-12-10T00:00:00+00:00"
+      },
+      "c": {
+        "price": 22.650999069213867,
+        "ts": "2018-12-10T00:00:00+00:00"
+      },
+      "d": {
+        "price": 25.55900001525879,
+        "ts": "2018-12-18T00:00:00+00:00"
+      },
+      "x": {
+        "price": 24.70400047302246,
+        "ts": "2018-12-03T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.7716613306718169,
+      "ad_xa": 1.2905196438061413,
+      "bc_ab": 0.6081024105998531,
+      "cd_ab": 1.2804936430108393,
+      "cd_bc": 2.105720386386425
+    },
+    "rule_summary": "AB/XA=0.786, AD/XA=1.27 default, CD/AB in {1.0,1.27}, CD/BC in 1.618-2.24",
+    "signal_stage": "detected",
+    "signal_ts": "2018-12-18T00:00:00+00:00",
+    "strength": 0.5290912766377593,
+    "strict_label": "butterfly",
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 24.108163887023927,
+      "ts": "2018-12-19T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-23T14:57:54.445856+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2018-12-18T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/harmonic-matches/20260324-visual-probe/AVGO__1d__20181218T000000__harmonic_butterfly.png",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": false,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 25.533000946044922,
+    "rsi": null,
+    "volume": 35154000.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_butterfly",
+  "score": 0.5290912766377593,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "AVGO",
+  "timeframe": "1d",
+  "title": "AVGO 1d | Butterfly | detected",
+  "ts_max": "2019-01-17T09:00:00",
+  "ts_min": "2018-03-06T09:00:00"
+}

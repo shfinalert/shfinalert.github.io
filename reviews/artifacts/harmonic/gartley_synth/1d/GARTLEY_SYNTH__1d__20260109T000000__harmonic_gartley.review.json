@@ -1,0 +1,64 @@
+{
+  "bars_rendered": 12,
+  "chart_data_path": null,
+  "explain": {
+    "direction": 1,
+    "pattern": "harmonic_gartley",
+    "ratios": {
+      "ab_xa": 0.6180000000000001,
+      "ad_xa": 0.7919999999999999,
+      "bc_ab": 0.7281553398058251,
+      "cd_ab": 1.0097087378640772,
+      "cd_bc": 1.3866666666666663
+    },
+    "rule_summary": "AB/XA=0.618, AD/XA=0.786, CD/AB in {1.0,1.27}, CD/BC in 1.13-1.618",
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 151.05440000000002,
+      "ts": "2026-01-10T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-23T14:48:27.994844+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2026-01-09T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/harmonic/GARTLEY_SYNTH/1d/GARTLEY_SYNTH__1d__20260109T000000__harmonic_gartley.png",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 151.064,
+    "rsi": null,
+    "volume": 1275.0
+  },
+  "market": "harmonic",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_gartley",
+  "score": 0.684013429261801,
+  "severity": 1,
+  "storage_partition": "harmonic",
+  "symbol": "GARTLEY_SYNTH",
+  "timeframe": "1d",
+  "title": "GARTLEY synthetic reference",
+  "ts_max": "2026-01-12T09:00:00",
+  "ts_min": "2026-01-01T09:00:00"
+}

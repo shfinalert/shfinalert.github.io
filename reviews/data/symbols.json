@@ -1,0 +1,196 @@
+{
+  "items": [
+    {
+      "artifacts": 2,
+      "latest_image": "artifacts/harmonic/bat_synth/1d/BAT_SYNTH__1d__20260110T000000__harmonic_bat.webp",
+      "latest_rule_id": "harmonic_bat",
+      "market": "harmonic",
+      "symbol": "BAT_SYNTH",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 2,
+      "latest_image": "artifacts/harmonic/butterfly_synth/1d/BUTTERFLY_SYNTH__1d__20260110T000000__harmonic_butterfly.webp",
+      "latest_rule_id": "harmonic_butterfly",
+      "market": "harmonic",
+      "symbol": "BUTTERFLY_SYNTH",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 2,
+      "latest_image": "artifacts/harmonic/crab_synth/1d/CRAB_SYNTH__1d__20260110T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "harmonic",
+      "symbol": "CRAB_SYNTH",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 2,
+      "latest_image": "artifacts/harmonic/gartley_synth/1d/GARTLEY_SYNTH__1d__20260110T000000__harmonic_gartley.webp",
+      "latest_rule_id": "harmonic_gartley",
+      "market": "harmonic",
+      "symbol": "GARTLEY_SYNTH",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 7,
+      "latest_image": "artifacts/kr/000050-ks/1d/000050.KS__1d__20251103T000000Z__bullish_regular__evt1_513da98ff226.png",
+      "latest_rule_id": "rsi_divergence_bullish_regular",
+      "market": "stocks",
+      "symbol": "000050.KS",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 14,
+      "latest_image": "artifacts/us/aapl/1d/AAPL__1d__20260320__pivot_structure__1000bars_hidpi_rev8.png",
+      "latest_rule_id": "diff_trend_pivot_structure_1000bars_hidpi_rev8",
+      "market": "stocks",
+      "symbol": "AAPL",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 13,
+      "latest_image": "artifacts/us/amd/1d/AMD__1d__20251219T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "AMD",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 9,
+      "latest_image": "artifacts/us/amzn/1d/AMZN__1d__20241115T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "AMZN",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 20,
+      "latest_image": "artifacts/us/avgo/1d/AVGO__1d__20251103T000000__harmonic_butterfly.webp",
+      "latest_rule_id": "harmonic_butterfly",
+      "market": "stocks",
+      "symbol": "AVGO",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 13,
+      "latest_image": "artifacts/us/ba/1d/BA__1d__20240429T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "BA",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 6,
+      "latest_image": "artifacts/us/cat/1d/CAT__1d__20250409T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "CAT",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 4,
+      "latest_image": "artifacts/us/cost/1d/COST__1d__20200406T000000__harmonic_bat.webp",
+      "latest_rule_id": "harmonic_bat",
+      "market": "stocks",
+      "symbol": "COST",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 14,
+      "latest_image": "artifacts/us/dis/1d/DIS__1d__20260128T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "DIS",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 4,
+      "latest_image": "artifacts/us/googl/1d/GOOGL__1d__20220112T000000__harmonic_bat.webp",
+      "latest_rule_id": "harmonic_bat",
+      "market": "stocks",
+      "symbol": "GOOGL",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 2,
+      "latest_image": "artifacts/us/ibm/1d/IBM__1d__20200214T000000__harmonic_butterfly.webp",
+      "latest_rule_id": "harmonic_butterfly",
+      "market": "stocks",
+      "symbol": "IBM",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 10,
+      "latest_image": "artifacts/us/jpm/1d/JPM__1d__20231019T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "JPM",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 2,
+      "latest_image": "artifacts/us/ko/1d/KO__1d__20131018T000000__harmonic_bat.webp",
+      "latest_rule_id": "harmonic_bat",
+      "market": "stocks",
+      "symbol": "KO",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 1,
+      "latest_image": "artifacts/us/mcd/1d/MCD__1d__20110705T000000__harmonic_crab.png",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "MCD",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 8,
+      "latest_image": "artifacts/us/meta/1d/META__1d__20250523T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "META",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 3,
+      "latest_image": "artifacts/us/msft/1d/MSFT__1d__20180627T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "MSFT",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 20,
+      "latest_image": "artifacts/us/nflx/1d/NFLX__1d__20260123T000000__candle_bullish_engulfing.webp",
+      "latest_rule_id": "candle_bullish_engulfing",
+      "market": "stocks",
+      "symbol": "NFLX",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 13,
+      "latest_image": "artifacts/us/nvda/1d/NVDA__1d__20250228T000000__harmonic_bat.webp",
+      "latest_rule_id": "harmonic_bat",
+      "market": "stocks",
+      "symbol": "NVDA",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 16,
+      "latest_image": "artifacts/us/tsla/1d/TSLA__1d__20251124T000000__harmonic_crab.webp",
+      "latest_rule_id": "harmonic_crab",
+      "market": "stocks",
+      "symbol": "TSLA",
+      "timeframe": "1d"
+    },
+    {
+      "artifacts": 4,
+      "latest_image": "artifacts/us/xom/1d/XOM__1d__20250624T000000__harmonic_bat.webp",
+      "latest_rule_id": "harmonic_bat",
+      "market": "stocks",
+      "symbol": "XOM",
+      "timeframe": "1d"
+    }
+  ]
+}

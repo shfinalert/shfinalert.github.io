@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/TSLA/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2025-11-24T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_crab",
+    "points": {
+      "a": {
+        "price": 467.0,
+        "ts": "2025-10-28T00:00:00+00:00"
+      },
+      "b": {
+        "price": 439.6099853515625,
+        "ts": "2025-10-30T00:00:00+00:00"
+      },
+      "c": {
+        "price": 423.9599914550781,
+        "ts": "2025-11-17T00:00:00+00:00"
+      },
+      "d": {
+        "price": 383.760009765625,
+        "ts": "2025-11-21T00:00:00+00:00"
+      },
+      "x": {
+        "price": 416.5799865722656,
+        "ts": "2025-10-03T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.5432369566441083,
+      "ad_xa": 1.6509315364162012,
+      "bc_ab": 0.571375886335174,
+      "cd_ab": 1.4676874841228458,
+      "cd_bc": 2.5686899276352864
+    },
+    "rule_summary": "AB/XA in 0.382-0.618, AD/XA=1.618, CD/BC in 2.24-3.618, CD/AB is lower-weight symmetry",
+    "signal_stage": "detected",
+    "signal_ts": "2025-11-24T00:00:00+00:00",
+    "strength": 0.4941507176901772,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 415.5576860351563,
+      "ts": "2025-11-27T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:46:26.064398+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2025-11-24T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/TSLA/1d/TSLA__1d__20251124T000000__harmonic_crab.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 485.55999755859375,
+    "rsi": 62.36090198400809,
+    "volume": 58223600.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=62.36)."
+  ],
+  "rule_id": "harmonic_crab",
+  "score": 0.4941507176901772,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "TSLA",
+  "timeframe": "1d",
+  "title": "TSLA 1d | Crab | detected",
+  "ts_max": "2025-12-23T09:00:00",
+  "ts_min": "2025-03-11T09:00:00"
+}

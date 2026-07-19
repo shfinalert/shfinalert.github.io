@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/AVGO/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2022-12-16T00:00:00+00:00",
+    "direction": -1,
+    "pattern": "harmonic_crab",
+    "points": {
+      "a": {
+        "price": 4.436399841308594,
+        "ts": "2022-09-30T00:00:00+00:00"
+      },
+      "b": {
+        "price": 4.897000122070313,
+        "ts": "2022-10-06T00:00:00+00:00"
+      },
+      "c": {
+        "price": 5.160499954223633,
+        "ts": "2022-12-07T00:00:00+00:00"
+      },
+      "d": {
+        "price": 5.856499862670899,
+        "ts": "2022-12-14T00:00:00+00:00"
+      },
+      "x": {
+        "price": 5.31259994506836,
+        "ts": "2022-09-12T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.5256793268858196,
+      "ad_xa": 1.6207485199655527,
+      "bc_ab": 0.5720791826647529,
+      "cd_ab": 1.5110713942602325,
+      "cd_bc": 2.641367558983078
+    },
+    "rule_summary": "AB/XA in 0.382-0.618, AD/XA=1.618, CD/BC in 2.24-3.618, CD/AB is lower-weight symmetry",
+    "signal_stage": "detected",
+    "signal_ts": "2022-12-16T00:00:00+00:00",
+    "strength": 0.7693081462285625,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 5.314021654510499,
+      "ts": "2022-12-18T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:47:28.509802+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2022-12-16T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/AVGO/1d/AVGO__1d__20221216T000000__harmonic_crab.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 5.742900085449219,
+    "rsi": 57.78106532592243,
+    "volume": 15703000.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=57.78)."
+  ],
+  "rule_id": "harmonic_crab",
+  "score": 0.7693081462285625,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "AVGO",
+  "timeframe": "1d",
+  "title": "AVGO 1d | Crab | detected",
+  "ts_max": "2023-01-18T09:00:00",
+  "ts_min": "2022-04-01T09:00:00"
+}

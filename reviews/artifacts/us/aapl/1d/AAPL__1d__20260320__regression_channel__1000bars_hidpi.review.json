@@ -1,0 +1,72 @@
+{
+  "bars_rendered": 1000,
+  "chart_data_path": "/data/research/raw/stocks/us/AAPL/1d/ohlcv.parquet",
+  "explain": {
+    "bars_rendered": 1000,
+    "center_r2": 0.675043,
+    "center_slope": 0.366396,
+    "distance_pct": null,
+    "dpi": 220,
+    "format": "png",
+    "trend_family": "regression_channel",
+    "window": 200
+  },
+  "generated_at": "2026-03-23T13:20:28.699699+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2026-03-20T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/diff_trend/AAPL__1d__20260320__regression_channel__1000bars_hidpi.png",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": false,
+    "pivot_markers_present": false,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 247.99000549316406,
+    "rsi": 34.877491020778095,
+    "volume": 88331081.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=34.88)."
+  ],
+  "rule_id": "diff_trend_regression_channel_1000bars_hidpi",
+  "score": null,
+  "severity": null,
+  "storage_partition": "us",
+  "symbol": "AAPL",
+  "timeframe": "1d",
+  "title": "AAPL 1d - Regression Channel + slope/R2 (1000 bars)",
+  "ts_max": "2026-03-20T09:00:00",
+  "ts_min": "2022-03-25T09:00:00"
+}

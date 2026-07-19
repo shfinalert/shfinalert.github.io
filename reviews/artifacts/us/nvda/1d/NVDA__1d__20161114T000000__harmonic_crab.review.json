@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/NVDA/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2016-11-14T00:00:00+00:00",
+    "direction": -1,
+    "pattern": "harmonic_crab",
+    "points": {
+      "a": {
+        "price": 0.039812499284744264,
+        "ts": "2016-10-13T00:00:00+00:00"
+      },
+      "b": {
+        "price": 0.04559375047683716,
+        "ts": "2016-10-26T00:00:00+00:00"
+      },
+      "c": {
+        "price": 0.0417250007390976,
+        "ts": "2016-11-10T00:00:00+00:00"
+      },
+      "d": {
+        "price": 0.0554812490940094,
+        "ts": "2016-11-11T00:00:00+00:00"
+      },
+      "x": {
+        "price": 0.030337500572204593,
+        "ts": "2016-06-23T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.610158520068368,
+      "ad_xa": 1.6536941359715813,
+      "bc_ab": 0.669189005838547,
+      "cd_ab": 2.3794586842596326,
+      "cd_bc": 3.555734872359389
+    },
+    "rule_summary": "AB/XA in 0.382-0.618, AD/XA=1.618, CD/BC in 2.24-3.618, CD/AB is lower-weight symmetry",
+    "signal_stage": "detected",
+    "signal_ts": "2016-11-14T00:00:00+00:00",
+    "strength": 0.39487577795037115,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 0.049495786666870115,
+      "ts": "2016-11-17T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:45:43.274723+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2016-11-14T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/NVDA/1d/NVDA__1d__20161114T000000__harmonic_crab.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 0.05698124766349793,
+    "rsi": 58.2723428170821,
+    "volume": 387796000.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=58.27)."
+  ],
+  "rule_id": "harmonic_crab",
+  "score": 0.39487577795037115,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "NVDA",
+  "timeframe": "1d",
+  "title": "NVDA 1d | Crab | detected",
+  "ts_max": "2016-12-13T09:00:00",
+  "ts_min": "2016-03-02T09:00:00"
+}

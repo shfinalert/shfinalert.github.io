@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/AMD/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2022-12-21T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_gartley",
+    "points": {
+      "a": {
+        "price": 79.2300033569336,
+        "ts": "2022-12-01T00:00:00+00:00"
+      },
+      "b": {
+        "price": 67.52999877929688,
+        "ts": "2022-12-12T00:00:00+00:00"
+      },
+      "c": {
+        "price": 75.20999908447266,
+        "ts": "2022-12-13T00:00:00+00:00"
+      },
+      "d": {
+        "price": 63.52000045776367,
+        "ts": "2022-12-20T00:00:00+00:00"
+      },
+      "x": {
+        "price": 59.79999923706055,
+        "ts": "2022-11-09T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.6021617136802319,
+      "ad_xa": 0.8085434672194279,
+      "bc_ab": 0.6564100256725766,
+      "cd_ab": 0.9991447908535985,
+      "cd_bc": 1.5221351773685146
+    },
+    "rule_summary": "AB/XA=0.618, AD/XA=0.786, CD/AB in {1.0,1.27}, CD/BC in 1.13-1.618",
+    "signal_stage": "detected",
+    "signal_ts": "2022-12-21T00:00:00+00:00",
+    "strength": 0.42101532302666406,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 69.52122156524658,
+      "ts": "2022-12-22T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:48:10.602867+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2022-12-21T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/AMD/1d/AMD__1d__20221221T000000__harmonic_gartley.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 76.52999877929688,
+    "rsi": 66.07120912226023,
+    "volume": 84293200.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=66.07)."
+  ],
+  "rule_id": "harmonic_gartley",
+  "score": 0.42101532302666406,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "AMD",
+  "timeframe": "1d",
+  "title": "AMD 1d | Gartley | detected",
+  "ts_max": "2023-01-23T09:00:00",
+  "ts_min": "2022-04-06T09:00:00"
+}

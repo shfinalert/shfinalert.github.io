@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/NFLX/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2022-06-22T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_gartley",
+    "points": {
+      "a": {
+        "price": 1.9589000701904298,
+        "ts": "2022-05-16T00:00:00+00:00"
+      },
+      "b": {
+        "price": 1.7570999145507813,
+        "ts": "2022-05-19T00:00:00+00:00"
+      },
+      "c": {
+        "price": 1.9018999099731446,
+        "ts": "2022-05-20T00:00:00+00:00"
+      },
+      "d": {
+        "price": 1.6979999542236328,
+        "ts": "2022-06-21T00:00:00+00:00"
+      },
+      "x": {
+        "price": 1.6270999908447266,
+        "ts": "2022-05-12T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.608198033097492,
+      "ad_xa": 0.786317219939434,
+      "bc_ab": 0.7175415448188777,
+      "cd_ab": 1.0104053443527214,
+      "cd_bc": 1.4081489101899578
+    },
+    "rule_summary": "AB/XA=0.618, AD/XA=0.786, CD/AB in {1.0,1.27}, CD/BC in 1.13-1.618",
+    "signal_stage": "detected",
+    "signal_ts": "2022-06-22T00:00:00+00:00",
+    "strength": 0.6803408131594147,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 1.7976637985229493,
+      "ts": "2022-06-23T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:47:46.789489+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2022-06-22T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/NFLX/1d/NFLX__1d__20220622T000000__harmonic_gartley.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 2.238800048828125,
+    "rsi": 69.46385144912716,
+    "volume": 234301000.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=69.46)."
+  ],
+  "rule_id": "harmonic_gartley",
+  "score": 0.6803408131594147,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "NFLX",
+  "timeframe": "1d",
+  "title": "NFLX 1d | Gartley | detected",
+  "ts_max": "2022-07-21T09:00:00",
+  "ts_min": "2021-10-05T09:00:00"
+}

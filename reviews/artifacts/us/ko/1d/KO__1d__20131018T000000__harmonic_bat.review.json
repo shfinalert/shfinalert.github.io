@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/KO/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2013-10-18T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_bat",
+    "points": {
+      "a": {
+        "price": 43.43000030517578,
+        "ts": "2013-05-16T00:00:00+00:00"
+      },
+      "b": {
+        "price": 38.970001220703125,
+        "ts": "2013-06-20T00:00:00+00:00"
+      },
+      "c": {
+        "price": 41.25,
+        "ts": "2013-07-15T00:00:00+00:00"
+      },
+      "d": {
+        "price": 36.83000183105469,
+        "ts": "2013-10-07T00:00:00+00:00"
+      },
+      "x": {
+        "price": 35.86000061035156,
+        "ts": "2012-11-15T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.5891676703133898,
+      "ad_xa": 0.8718624491667633,
+      "bc_ab": 0.5112105935704376,
+      "cd_ab": 0.9910311830182643,
+      "cd_bc": 1.9385967260510502
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}",
+    "signal_stage": "detected",
+    "signal_ts": "2013-10-18T00:00:00+00:00",
+    "strength": 0.525134755769706,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 39.35120124816895,
+      "ts": "2013-10-29T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:48:25.365727+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2013-10-18T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/KO/1d/KO__1d__20131018T000000__harmonic_bat.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 40.220001220703125,
+    "rsi": 66.58281060416067,
+    "volume": 12021500.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=66.58)."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.525134755769706,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "KO",
+  "timeframe": "1d",
+  "title": "KO 1d | Bat | detected",
+  "ts_max": "2013-11-15T09:00:00",
+  "ts_min": "2013-02-04T09:00:00"
+}

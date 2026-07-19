@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/IBM/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2020-02-14T00:00:00+00:00",
+    "direction": -1,
+    "pattern": "harmonic_butterfly",
+    "points": {
+      "a": {
+        "price": 117.74802709400767,
+        "ts": "2019-08-23T00:00:00+00:00"
+      },
+      "b": {
+        "price": 134.67493294301954,
+        "ts": "2019-10-01T00:00:00+00:00"
+      },
+      "c": {
+        "price": 123.35986981656309,
+        "ts": "2020-01-30T00:00:00+00:00"
+      },
+      "d": {
+        "price": 145.09430806905772,
+        "ts": "2020-02-06T00:00:00+00:00"
+      },
+      "x": {
+        "price": 139.79322094306434,
+        "ts": "2019-08-02T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.7678274895158695,
+      "ad_xa": 1.2404645276557735,
+      "bc_ab": 0.6684661229516426,
+      "cd_ab": 1.2840171999753516,
+      "cd_bc": 1.9208410955901773
+    },
+    "rule_summary": "AB/XA=0.786, AD/XA=1.27 default, CD/AB in {1.0,1.27}, CD/BC in 1.618-2.24",
+    "signal_stage": "detected",
+    "signal_ts": "2020-02-14T00:00:00+00:00",
+    "strength": 0.4545411117396114,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 134.6480287365886,
+      "ts": "2020-02-22T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:48:48.778215+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2020-02-14T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/IBM/1d/IBM__1d__20200214T000000__harmonic_butterfly.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 90.55712756417677,
+    "rsi": 26.744624542164516,
+    "volume": 11054128.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=26.74)."
+  ],
+  "rule_id": "harmonic_butterfly",
+  "score": 0.4545411117396114,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "IBM",
+  "timeframe": "1d",
+  "title": "IBM 1d | Butterfly | detected",
+  "ts_max": "2020-03-16T09:00:00",
+  "ts_min": "2019-05-31T09:00:00"
+}

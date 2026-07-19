@@ -1,0 +1,95 @@
+{
+  "bars_rendered": 220,
+  "chart_data_path": "/data/research/raw/stocks/us/NVDA/1d/ohlcv.parquet",
+  "explain": {
+    "candidate_labels": [
+      "bat"
+    ],
+    "d_confirm_ts": "2011-05-31T00:00:00+00:00",
+    "d_mode": "price_reached",
+    "direction": -1,
+    "pattern": "harmonic_bat",
+    "points": {
+      "a": {
+        "price": 0.42800000309944153,
+        "ts": "2011-05-17T00:00:00+00:00"
+      },
+      "b": {
+        "price": 0.4717499911785126,
+        "ts": "2011-05-24T00:00:00+00:00"
+      },
+      "c": {
+        "price": 0.4467499852180481,
+        "ts": "2011-05-25T00:00:00+00:00"
+      },
+      "d": {
+        "price": 0.5012500286102295,
+        "ts": "2011-05-31T00:00:00+00:00"
+      },
+      "x": {
+        "price": 0.5130000114440918,
+        "ts": "2011-05-12T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.5147056915768478,
+      "ad_xa": 0.8617649214077774,
+      "bc_ab": 0.5714288633697683,
+      "cd_ab": 1.2457156169661432,
+      "cd_bc": 2.1800012159344635
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}",
+    "signal_stage": "detected",
+    "signal_ts": "2011-05-31T00:00:00+00:00",
+    "strength": 0.5449997876945405,
+    "strict_label": "bat",
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 0.4732685188651085,
+      "ts": "2011-06-01T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-23T14:57:51.274280+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2011-05-31T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/harmonic-matches/20260324-visual-probe/NVDA__1d__20110531T000000__harmonic_bat.png",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": false,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 0.38749998807907104,
+    "rsi": null,
+    "volume": 692200000.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.5449997876945405,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "NVDA",
+  "timeframe": "1d",
+  "title": "NVDA 1d | Bat | detected",
+  "ts_max": "2011-06-28T09:00:00",
+  "ts_min": "2010-08-16T09:00:00"
+}

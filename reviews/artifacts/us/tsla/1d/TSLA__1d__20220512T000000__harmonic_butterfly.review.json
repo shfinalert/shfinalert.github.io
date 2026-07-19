@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/TSLA/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2022-05-12T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_butterfly",
+    "points": {
+      "a": {
+        "price": 114.9933369954427,
+        "ts": "2022-04-19T00:00:00+00:00"
+      },
+      "b": {
+        "price": 91.29999796549478,
+        "ts": "2022-04-28T00:00:00+00:00"
+      },
+      "c": {
+        "price": 106.16666666666666,
+        "ts": "2022-05-04T00:00:00+00:00"
+      },
+      "d": {
+        "price": 75.55555725097656,
+        "ts": "2022-05-12T00:00:00+00:00"
+      },
+      "x": {
+        "price": 84.0044453938802,
+        "ts": "2022-03-14T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.7645752334282673,
+      "ad_xa": 1.2726424762632569,
+      "bc_ab": 0.62746194963828,
+      "cd_ab": 1.291971105338857,
+      "cd_bc": 2.0590429524589564
+    },
+    "rule_summary": "AB/XA=0.786, AD/XA=1.27 default, CD/AB in {1.0,1.27}, CD/BC in 1.618-2.24",
+    "signal_stage": "detected",
+    "signal_ts": "2022-05-12T00:00:00+00:00",
+    "strength": 0.6116473449216197,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 90.62078911336263,
+      "ts": "2022-05-13T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:46:31.628520+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2022-05-12T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/TSLA/1d/TSLA__1d__20220512T000000__harmonic_butterfly.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 77.40999857584634,
+    "rsi": 41.45632397365084,
+    "volume": 97536600.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=41.46)."
+  ],
+  "rule_id": "harmonic_butterfly",
+  "score": 0.6116473449216197,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "TSLA",
+  "timeframe": "1d",
+  "title": "TSLA 1d | Butterfly | detected",
+  "ts_max": "2022-06-10T09:00:00",
+  "ts_min": "2021-08-26T09:00:00"
+}

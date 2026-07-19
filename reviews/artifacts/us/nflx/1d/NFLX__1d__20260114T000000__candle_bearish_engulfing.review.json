@@ -1,0 +1,64 @@
+{
+  "bars_rendered": 60,
+  "chart_data_path": "/data/research/raw/stocks/us/NFLX/1d/ohlcv.parquet",
+  "explain": null,
+  "generated_at": "2026-07-13T09:52:49.584260+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2026-01-14T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/STEP024/candle-events/us/NFLX/1d/NFLX__1d__20260114T000000__candle_bearish_engulfing.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#000000",
+    "pivot_line_width": 2.2,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 91.81999969482422,
+    "rsi": 50.93942341755901,
+    "volume": 61625100.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=50.94).",
+    "Explain payload is empty; verify this chart is only for visual baseline review."
+  ],
+  "rule_id": "candle_bearish_engulfing",
+  "score": 1.0,
+  "severity": null,
+  "storage_partition": "us",
+  "symbol": "NFLX",
+  "timeframe": "1d",
+  "title": "STEP024 NFLX bearish engulfing",
+  "ts_max": "2026-03-20T00:00:00",
+  "ts_min": "2025-12-23T00:00:00"
+}

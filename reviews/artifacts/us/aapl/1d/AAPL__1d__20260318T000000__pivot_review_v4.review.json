@@ -1,0 +1,64 @@
+{
+  "bars_rendered": 500,
+  "chart_data_path": "/data/test/chart/us/AAPL/1d/ohlcv.parquet",
+  "explain": null,
+  "generated_at": "2026-03-21T04:30:18.598943+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2026-03-18T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/AAPL/1d/AAPL__1d__20260318T000000__pivot_review_v4.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 249.94000244140625,
+    "rsi": 36.70500202644015,
+    "volume": 35715200.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=36.71).",
+    "Explain payload is empty; verify this chart is only for visual baseline review."
+  ],
+  "rule_id": "pivot_review_v4",
+  "score": null,
+  "severity": null,
+  "storage_partition": "us",
+  "symbol": "AAPL",
+  "timeframe": "1d",
+  "title": "AAPL 1d recent 500 bars with pivots v4",
+  "ts_max": "2026-03-18T09:00:00",
+  "ts_min": "2024-03-20T09:00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "bars_rendered": 1000,
+  "chart_data_path": "/data/research/raw/stocks/us/AAPL/1d/ohlcv.parquet",
+  "explain": {
+    "bars_rendered": 1000,
+    "dpi": 220,
+    "format": "png",
+    "pivot_method": "zigzag_pct_5",
+    "recent_pivots": [
+      {
+        "kind": -1,
+        "price": 244.0,
+        "ts": "2025-10-10T00:00:00+00:00"
+      },
+      {
+        "kind": 1,
+        "price": 288.62,
+        "ts": "2025-12-03T00:00:00+00:00"
+      },
+      {
+        "kind": -1,
+        "price": 243.42,
+        "ts": "2026-01-20T00:00:00+00:00"
+      },
+      {
+        "kind": 1,
+        "price": 280.91,
+        "ts": "2026-02-06T00:00:00+00:00"
+      },
+      {
+        "kind": -1,
+        "price": 255.45,
+        "ts": "2026-02-13T00:00:00+00:00"
+      },
+      {
+        "kind": 1,
+        "price": 276.11,
+        "ts": "2026-02-26T00:00:00+00:00"
+      }
+    ],
+    "structure": "mixed",
+    "trend_family": "pivot_structure"
+  },
+  "generated_at": "2026-03-23T13:20:33.488315+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2026-03-20T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/diff_trend/AAPL__1d__20260320__pivot_structure__1000bars_hidpi.png",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": false
+  },
+  "latest_values": {
+    "close": 247.99000549316406,
+    "rsi": 34.877491020778095,
+    "volume": 88331081.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=34.88)."
+  ],
+  "rule_id": "diff_trend_pivot_structure_1000bars_hidpi",
+  "score": null,
+  "severity": null,
+  "storage_partition": "us",
+  "symbol": "AAPL",
+  "timeframe": "1d",
+  "title": "AAPL 1d - Pivot Structure (1000 bars)",
+  "ts_max": "2026-03-20T09:00:00",
+  "ts_min": "2022-03-25T09:00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "bars_rendered": 12,
+  "chart_data_path": null,
+  "explain": {
+    "direction": 1,
+    "pattern": "harmonic_bat",
+    "ratios": {
+      "ab_xa": 0.5,
+      "ad_xa": 0.8919999999999999,
+      "bc_ab": 0.4980000000000001,
+      "cd_ab": 1.2819999999999998,
+      "cd_bc": 2.5742971887550192
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}",
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 144.8744,
+      "ts": "2026-01-10T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-23T14:48:28.860210+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2026-01-09T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/harmonic/BAT_SYNTH/1d/BAT_SYNTH__1d__20260109T000000__harmonic_bat.png",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 141.88,
+    "rsi": null,
+    "volume": 1275.0
+  },
+  "market": "harmonic",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.5741981604605955,
+  "severity": 1,
+  "storage_partition": "harmonic",
+  "symbol": "BAT_SYNTH",
+  "timeframe": "1d",
+  "title": "BAT synthetic reference",
+  "ts_max": "2026-01-12T09:00:00",
+  "ts_min": "2026-01-01T09:00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "bars_rendered": 12,
+  "chart_data_path": null,
+  "explain": {
+    "direction": 1,
+    "pattern": "harmonic_bat",
+    "ratios": {
+      "ab_xa": 0.5,
+      "ad_xa": 0.8859999999999999,
+      "bc_ab": 0.4980000000000001,
+      "cd_ab": 1.27,
+      "cd_bc": 2.5502008032128507
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}"
+  },
+  "generated_at": "2026-03-21T04:01:35.245252+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2026-01-10T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/harmonic/BAT_SYNTH/1d/BAT_SYNTH__1d__20260110T000000__harmonic_bat.webp",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 141.88,
+    "rsi": null,
+    "volume": 1275.0
+  },
+  "market": "harmonic",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.7697391354428537,
+  "severity": 1,
+  "storage_partition": "harmonic",
+  "symbol": "BAT_SYNTH",
+  "timeframe": "1d",
+  "title": "BAT synthetic reference",
+  "ts_max": "2026-01-12T09:00:00",
+  "ts_min": "2026-01-01T09:00:00"
+}

@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/AVGO/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2011-07-28T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_bat",
+    "points": {
+      "a": {
+        "price": 0.3944999933242798,
+        "ts": "2011-07-07T00:00:00+00:00"
+      },
+      "b": {
+        "price": 0.3440000057220459,
+        "ts": "2011-07-18T00:00:00+00:00"
+      },
+      "c": {
+        "price": 0.37390000820159913,
+        "ts": "2011-07-22T00:00:00+00:00"
+      },
+      "d": {
+        "price": 0.32409999370574955,
+        "ts": "2011-07-28T00:00:00+00:00"
+      },
+      "x": {
+        "price": 0.3148000001907349,
+        "ts": "2011-05-24T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.6336259969008575,
+      "ad_xa": 0.8833124928953052,
+      "bc_ab": 0.5920794023765378,
+      "cd_ab": 0.9861391430053866,
+      "cd_bc": 1.6655521861546594
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}",
+    "signal_stage": "detected",
+    "signal_ts": "2011-07-28T00:00:00+00:00",
+    "strength": 0.5340682715213738,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 0.3509927935600281,
+      "ts": "2011-07-29T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:47:40.635331+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2011-07-28T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/AVGO/1d/AVGO__1d__20110728T000000__harmonic_bat.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 0.3088000059127808,
+    "rsi": 47.887195260122844,
+    "volume": 25065000.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=47.89)."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.5340682715213738,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "AVGO",
+  "timeframe": "1d",
+  "title": "AVGO 1d | Bat | detected",
+  "ts_max": "2011-08-25T09:00:00",
+  "ts_min": "2010-11-10T09:00:00"
+}

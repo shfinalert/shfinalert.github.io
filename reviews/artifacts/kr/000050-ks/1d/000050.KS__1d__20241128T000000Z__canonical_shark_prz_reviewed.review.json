@@ -1,0 +1,120 @@
+{
+  "bars_rendered": 78,
+  "chart_data_path": "/data/csc/raw/ds1_d0c11007ab04de0caf9b5f4445d070945d0636b49875ba05fbe5c94c984728f2/market=stocks/region=KR/symbol=000050.KS/timeframe=1d/contract=ohlcv-v1/ohlcv.parquet",
+  "explain": {
+    "direction": -1,
+    "event_artifact_path": "/data/csc/events/contract=harmonic-prz-bamm-registry-v1--harmonic_percentage--zigzag_percentage_6/producer=run_20260713T111704466791Z_760793b3eee9394ef0c61719_2600/market=stocks/region=KR/symbol=000050.KS/timeframe=1d.attempt-000002/events.parquet",
+    "event_id": "evt1_0d6dfebe8e4f0f310a885e7d762f5b72a2f5967f76d835e6a8830ffbdecfe96e",
+    "overlay_counts": {
+      "legs": 4,
+      "prz_lines": 4,
+      "prz_polygons": 1,
+      "xabcd_points": 5
+    },
+    "pattern": "shark",
+    "pattern_id": "harmonic_shark",
+    "points": {
+      "a": {
+        "confirm_ts_ns": 1731369600000000000,
+        "kind": -1,
+        "price": 5680.0,
+        "ts_ns": 1731369600000000000
+      },
+      "b": {
+        "confirm_ts_ns": 1732147200000000000,
+        "kind": 1,
+        "price": 6300.0,
+        "ts_ns": 1731888000000000000
+      },
+      "c": {
+        "confirm_ts_ns": 1732665600000000000,
+        "kind": -1,
+        "price": 5910.0,
+        "ts_ns": 1732147200000000000
+      },
+      "d": {
+        "confirm_ts_ns": 1732752000000000000,
+        "kind": 1,
+        "price": 6560.0,
+        "ts_ns": 1732752000000000000
+      },
+      "x": {
+        "confirm_ts_ns": 1731024000000000000,
+        "kind": 1,
+        "price": 6480.0,
+        "ts_ns": 1730764800000000000
+      }
+    },
+    "profile": {
+      "min_bars_between_pivots": 1,
+      "pivot_method": "zigzag_percentage",
+      "profile_label": "zigzag_percentage_6",
+      "reversal": 0.06,
+      "use_existing_pivots": false
+    },
+    "prz": {
+      "high": 6584.0,
+      "low": 6388.8,
+      "mid": 6510.933333333333,
+      "primary_d": 6486.4,
+      "touch": true,
+      "width": 195.19999999999982
+    },
+    "prz_id": "shark-bear-199f03fc55adbf92",
+    "ratios": {
+      "ab_xa": 0.775,
+      "ad_xa": 1.1,
+      "bc_ab": 0.6290322580645161,
+      "cd_ab": 1.0483870967741935,
+      "cd_bc": 1.6666666666666667
+    },
+    "selector": "harmonic_percentage",
+    "setup_id": "shark-bear-199f03fc55adbf92",
+    "source": "committed canonical STEP026 event-v1 Parquet",
+    "source_ohlcv_path": "/data/csc/raw/ds1_d0c11007ab04de0caf9b5f4445d070945d0636b49875ba05fbe5c94c984728f2/market=stocks/region=KR/symbol=000050.KS/timeframe=1d/contract=ohlcv-v1/ohlcv.parquet",
+    "stage": "setup"
+  },
+  "generated_at": "2026-07-13T11:45:23.134709+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2024-11-28T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/STEP026/canonical/000050.KS__1d__20241128T000000Z__canonical_shark_prz_reviewed.png",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#000000",
+    "pivot_line_width": 2.2,
+    "pivot_lines_enabled": false,
+    "pivot_markers_present": false,
+    "show_fibband": false,
+    "show_rsi": false,
+    "show_volume": true,
+    "trendline_overlay_expected": false
+  },
+  "latest_values": {
+    "close": 6580.0,
+    "rsi": null,
+    "volume": 1234.0
+  },
+  "market": "stocks",
+  "model_version": "STEP026-canonical-event-v1",
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_shark",
+  "score": 0.2655271793477891,
+  "severity": 1,
+  "storage_partition": "kr",
+  "symbol": "000050.KS",
+  "timeframe": "1d",
+  "title": "000050.KS 1d | Canonical Shark XABCD + PRZ",
+  "ts_max": "2025-01-14T09:00:00",
+  "ts_min": "2024-09-19T09:00:00"
+}

@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/COST/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2020-04-06T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_bat",
+    "points": {
+      "a": {
+        "price": 324.510009765625,
+        "ts": "2020-03-05T00:00:00+00:00"
+      },
+      "b": {
+        "price": 293.0,
+        "ts": "2020-03-09T00:00:00+00:00"
+      },
+      "c": {
+        "price": 309.7300109863281,
+        "ts": "2020-03-10T00:00:00+00:00"
+      },
+      "d": {
+        "price": 278.4200134277344,
+        "ts": "2020-03-23T00:00:00+00:00"
+      },
+      "x": {
+        "price": 271.2799987792969,
+        "ts": "2020-02-28T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.5919594826632328,
+      "ad_xa": 0.8658648661509505,
+      "bc_ab": 0.5309427420292101,
+      "cd_ab": 0.9936524231976136,
+      "cd_bc": 1.8714869693857634
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}",
+    "signal_stage": "detected",
+    "signal_ts": "2020-04-06T00:00:00+00:00",
+    "strength": 0.46490522647854676,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 296.0263920288086,
+      "ts": "2020-04-20T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:47:10.957943+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2020-04-06T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/COST/1d/COST__1d__20200406T000000__harmonic_bat.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 307.9200134277344,
+    "rsi": 52.51565477267572,
+    "volume": 2460900.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=52.52)."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.46490522647854676,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "COST",
+  "timeframe": "1d",
+  "title": "COST 1d | Bat | detected",
+  "ts_max": "2020-05-05T09:00:00",
+  "ts_min": "2019-07-22T09:00:00"
+}

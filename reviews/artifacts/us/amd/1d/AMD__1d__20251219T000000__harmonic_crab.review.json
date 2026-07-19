@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/AMD/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2025-12-19T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_crab",
+    "points": {
+      "a": {
+        "price": 267.0799865722656,
+        "ts": "2025-10-29T00:00:00+00:00"
+      },
+      "b": {
+        "price": 242.80999755859375,
+        "ts": "2025-11-05T00:00:00+00:00"
+      },
+      "c": {
+        "price": 263.510009765625,
+        "ts": "2025-11-12T00:00:00+00:00"
+      },
+      "d": {
+        "price": 197.52999877929688,
+        "ts": "2025-12-17T00:00:00+00:00"
+      },
+      "x": {
+        "price": 224.8800048828125,
+        "ts": "2025-10-22T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.575118472616247,
+      "ad_xa": 1.6481046912480322,
+      "bc_ab": 0.8529057098200757,
+      "cd_ab": 2.7185842955742574,
+      "cd_bc": 3.1874382645975663
+    },
+    "rule_summary": "AB/XA in 0.382-0.618, AD/XA=1.618, CD/BC in 2.24-3.618, CD/AB is lower-weight symmetry",
+    "signal_stage": "detected",
+    "signal_ts": "2025-12-19T00:00:00+00:00",
+    "strength": 0.45335681988169046,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 224.09809411621094,
+      "ts": "2025-12-21T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:48:07.725810+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2025-12-19T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/AMD/1d/AMD__1d__20251219T000000__harmonic_crab.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 249.8000030517578,
+    "rsi": 71.72988775707114,
+    "volume": 62385600.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=71.73)."
+  ],
+  "rule_id": "harmonic_crab",
+  "score": 0.45335681988169046,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "AMD",
+  "timeframe": "1d",
+  "title": "AMD 1d | Crab | detected",
+  "ts_max": "2026-01-21T09:00:00",
+  "ts_min": "2025-04-04T09:00:00"
+}

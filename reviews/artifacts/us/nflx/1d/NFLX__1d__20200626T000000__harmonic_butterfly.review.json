@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/NFLX/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2020-06-26T00:00:00+00:00",
+    "direction": -1,
+    "pattern": "harmonic_butterfly",
+    "points": {
+      "a": {
+        "price": 3.9785999298095707,
+        "ts": "2020-05-27T00:00:00+00:00"
+      },
+      "b": {
+        "price": 4.455699920654297,
+        "ts": "2020-06-11T00:00:00+00:00"
+      },
+      "c": {
+        "price": 4.124499893188477,
+        "ts": "2020-06-12T00:00:00+00:00"
+      },
+      "d": {
+        "price": 4.74010009765625,
+        "ts": "2020-06-23T00:00:00+00:00"
+      },
+      "x": {
+        "price": 4.589699935913086,
+        "ts": "2020-05-19T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.7807232630986249,
+      "ad_xa": 1.2461138279185149,
+      "bc_ab": 0.6941941601789088,
+      "cd_ab": 1.2902959888509455,
+      "cd_bc": 1.8586961153899775
+    },
+    "rule_summary": "AB/XA=0.786, AD/XA=1.27 default, CD/AB in {1.0,1.27}, CD/BC in 1.618-2.24",
+    "signal_stage": "detected",
+    "signal_ts": "2020-06-26T00:00:00+00:00",
+    "strength": 0.5551677862675916,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 4.449207033538818,
+      "ts": "2020-06-29T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:47:49.652226+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2020-06-26T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/NFLX/1d/NFLX__1d__20200626T000000__harmonic_butterfly.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 4.956499862670899,
+    "rsi": 53.88366657082537,
+    "volume": 78631000.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=53.88)."
+  ],
+  "rule_id": "harmonic_butterfly",
+  "score": 0.5551677862675916,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "NFLX",
+  "timeframe": "1d",
+  "title": "NFLX 1d | Butterfly | detected",
+  "ts_max": "2020-07-27T09:00:00",
+  "ts_min": "2019-10-10T09:00:00"
+}

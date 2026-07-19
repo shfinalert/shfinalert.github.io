@@ -1,0 +1,95 @@
+{
+  "bars_rendered": 220,
+  "chart_data_path": "/data/research/raw/stocks/us/DIS/1d/ohlcv.parquet",
+  "explain": {
+    "candidate_labels": [
+      "bat"
+    ],
+    "d_confirm_ts": "2022-09-30T00:00:00+00:00",
+    "d_mode": "price_reached",
+    "direction": 1,
+    "pattern": "harmonic_bat",
+    "points": {
+      "a": {
+        "price": 126.4800033569336,
+        "ts": "2022-08-16T00:00:00+00:00"
+      },
+      "b": {
+        "price": 108.5199966430664,
+        "ts": "2022-09-06T00:00:00+00:00"
+      },
+      "c": {
+        "price": 117.48999786376953,
+        "ts": "2022-09-12T00:00:00+00:00"
+      },
+      "d": {
+        "price": 94.27999877929688,
+        "ts": "2022-09-30T00:00:00+00:00"
+      },
+      "x": {
+        "price": 90.2300033569336,
+        "ts": "2022-07-14T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.49544846107219825,
+      "ad_xa": 0.8882759883485991,
+      "bc_ab": 0.4994430883913453,
+      "cd_ab": 1.2923157242782026,
+      "cd_bc": 2.5875134811468077
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}",
+    "signal_stage": "detected",
+    "signal_ts": "2022-09-30T00:00:00+00:00",
+    "strength": 0.6237217249549717,
+    "strict_label": "bat",
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 106.5804005279541,
+      "ts": "2022-10-01T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-23T14:57:49.308249+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2022-09-30T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/harmonic-matches/20260324-visual-probe/DIS__1d__20220930T000000__harmonic_bat.png",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": false,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 105.94999694824219,
+    "rsi": null,
+    "volume": 7250900.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.6237217249549717,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "DIS",
+  "timeframe": "1d",
+  "title": "DIS 1d | Bat | detected",
+  "ts_max": "2022-10-28T09:00:00",
+  "ts_min": "2021-12-15T09:00:00"
+}

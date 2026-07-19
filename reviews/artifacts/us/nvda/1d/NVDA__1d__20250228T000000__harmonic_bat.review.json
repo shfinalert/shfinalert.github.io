@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/NVDA/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2025-02-28T00:00:00+00:00",
+    "direction": 1,
+    "pattern": "harmonic_bat",
+    "points": {
+      "a": {
+        "price": 143.44000244140625,
+        "ts": "2025-02-18T00:00:00+00:00"
+      },
+      "b": {
+        "price": 124.44000244140625,
+        "ts": "2025-02-25T00:00:00+00:00"
+      },
+      "c": {
+        "price": 135.00999450683594,
+        "ts": "2025-02-27T00:00:00+00:00"
+      },
+      "d": {
+        "price": 116.4000015258789,
+        "ts": "2025-02-28T00:00:00+00:00"
+      },
+      "x": {
+        "price": 113.01000213623047,
+        "ts": "2025-02-03T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.6243838254831804,
+      "ad_xa": 0.888596800668719,
+      "bc_ab": 0.5563153718647204,
+      "cd_ab": 0.9794733147872122,
+      "cd_bc": 1.7606439877871851
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}",
+    "signal_stage": "detected",
+    "signal_ts": "2025-02-28T00:00:00+00:00",
+    "strength": 0.5109550725091776,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 126.72928187561035,
+      "ts": "2025-03-01T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:45:37.854515+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2025-02-28T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/NVDA/1d/NVDA__1d__20250228T000000__harmonic_bat.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 109.66999816894531,
+    "rsi": 39.22647847712405,
+    "volume": 229872500.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=39.23)."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.5109550725091776,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "NVDA",
+  "timeframe": "1d",
+  "title": "NVDA 1d | Bat | detected",
+  "ts_max": "2025-03-28T09:00:00",
+  "ts_min": "2024-06-11T09:00:00"
+}

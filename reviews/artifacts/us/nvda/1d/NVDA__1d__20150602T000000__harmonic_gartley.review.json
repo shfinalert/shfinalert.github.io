@@ -1,0 +1,95 @@
+{
+  "bars_rendered": 220,
+  "chart_data_path": "/data/research/raw/stocks/us/NVDA/1d/ohlcv.parquet",
+  "explain": {
+    "candidate_labels": [
+      "gartley"
+    ],
+    "d_confirm_ts": "2015-06-02T00:00:00+00:00",
+    "d_mode": "price_reached",
+    "direction": -1,
+    "pattern": "harmonic_gartley",
+    "points": {
+      "a": {
+        "price": 0.5095000267028809,
+        "ts": "2015-05-11T00:00:00+00:00"
+      },
+      "b": {
+        "price": 0.5485000014305115,
+        "ts": "2015-05-27T00:00:00+00:00"
+      },
+      "c": {
+        "price": 0.5199999809265137,
+        "ts": "2015-05-27T00:00:00+00:00"
+      },
+      "d": {
+        "price": 0.5590000152587891,
+        "ts": "2015-06-02T00:00:00+00:00"
+      },
+      "x": {
+        "price": 0.5720000267028809,
+        "ts": "2015-05-04T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.6239995956420898,
+      "ad_xa": 0.7919998168945312,
+      "bc_ab": 0.7307702300587947,
+      "cd_ab": 1.0000015283252153,
+      "cd_bc": 1.3684212727778464
+    },
+    "rule_summary": "AB/XA=0.618, AD/XA=0.786, CD/AB in {1.0,1.27}, CD/BC in 1.13-1.618",
+    "signal_stage": "detected",
+    "signal_ts": "2015-06-02T00:00:00+00:00",
+    "strength": 0.7395083848407857,
+    "strict_label": "gartley",
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 0.5400910196304322,
+      "ts": "2015-06-03T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-23T14:57:41.805708+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2015-06-02T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/harmonic-matches/20260324-visual-probe/NVDA__1d__20150602T000000__harmonic_gartley.png",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": false,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 0.5027499794960022,
+    "rsi": null,
+    "volume": 315916000.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_gartley",
+  "score": 0.7395083848407857,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "NVDA",
+  "timeframe": "1d",
+  "title": "NVDA 1d | Gartley | detected",
+  "ts_max": "2015-06-30T09:00:00",
+  "ts_min": "2014-08-15T09:00:00"
+}

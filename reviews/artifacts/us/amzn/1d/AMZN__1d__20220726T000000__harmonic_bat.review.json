@@ -1,0 +1,105 @@
+{
+  "bars_rendered": 200,
+  "chart_data_path": "/data/test/chart/us/AMZN/1d/ohlcv.parquet",
+  "explain": {
+    "d_confirm_ts": "2022-07-26T00:00:00+00:00",
+    "direction": -1,
+    "pattern": "harmonic_bat",
+    "points": {
+      "a": {
+        "price": 101.43000030517578,
+        "ts": "2022-06-14T00:00:00+00:00"
+      },
+      "b": {
+        "price": 116.98999786376953,
+        "ts": "2022-07-07T00:00:00+00:00"
+      },
+      "c": {
+        "price": 106.01000213623047,
+        "ts": "2022-07-13T00:00:00+00:00"
+      },
+      "d": {
+        "price": 125.5,
+        "ts": "2022-07-22T00:00:00+00:00"
+      },
+      "x": {
+        "price": 128.99000549316406,
+        "ts": "2022-06-06T00:00:00+00:00"
+      }
+    },
+    "ratios": {
+      "ab_xa": 0.5645861621744324,
+      "ad_xa": 0.8733670233601718,
+      "bc_ab": 0.7056553631317787,
+      "cd_ab": 1.25257075332928,
+      "cd_bc": 1.7750460334776295
+    },
+    "rule_summary": "AB/XA valid 0.382-0.618 with preferred 0.382/0.50, AD/XA=0.886, CD/AB in {1.0,1.27}",
+    "signal_stage": "detected",
+    "signal_ts": "2022-07-26T00:00:00+00:00",
+    "strength": 0.5027932870926832,
+    "target_e": {
+      "definition": "Initial post-D reversal target at 38.2% of the AD leg",
+      "price": 116.30526011657714,
+      "ts": "2022-07-30T00:00:00+00:00"
+    }
+  },
+  "generated_at": "2026-03-21T04:45:57.541309+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2022-07-26T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/us/AMZN/1d/AMZN__1d__20220726T000000__harmonic_bat.webp",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#5d4037",
+    "pivot_line_width": 1.8,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 133.6199951171875,
+    "rsi": 53.125523164260976,
+    "volume": 36252100.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=53.13)."
+  ],
+  "rule_id": "harmonic_bat",
+  "score": 0.5027932870926832,
+  "severity": 1,
+  "storage_partition": "us",
+  "symbol": "AMZN",
+  "timeframe": "1d",
+  "title": "AMZN 1d | Bat | detected",
+  "ts_max": "2022-08-23T09:00:00",
+  "ts_min": "2021-11-05T09:00:00"
+}

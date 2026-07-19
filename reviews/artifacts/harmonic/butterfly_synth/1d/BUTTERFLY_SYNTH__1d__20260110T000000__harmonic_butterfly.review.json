@@ -1,0 +1,56 @@
+{
+  "bars_rendered": 12,
+  "chart_data_path": null,
+  "explain": {
+    "direction": 1,
+    "pattern": "harmonic_butterfly",
+    "ratios": {
+      "ab_xa": 0.7859999999999999,
+      "ad_xa": 1.27,
+      "bc_ab": 0.6542239185750636,
+      "cd_ab": 1.27,
+      "cd_bc": 1.9412313795651668
+    },
+    "rule_summary": "AB/XA=0.786, AD/XA=1.27 default, CD/AB in {1.0,1.27}, CD/BC in 1.618-2.24"
+  },
+  "generated_at": "2026-03-21T04:01:35.852601+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2026-01-10T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/harmonic/BUTTERFLY_SYNTH/1d/BUTTERFLY_SYNTH__1d__20260110T000000__harmonic_butterfly.webp",
+  "indicators": {
+    "fibband_levels_present": [],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_markers_present": true,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 120.91456,
+    "rsi": null,
+    "volume": 1275.0
+  },
+  "market": "harmonic",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm whether RSI is intentionally absent or missing for this chart."
+  ],
+  "rule_id": "harmonic_butterfly",
+  "score": 0.9132977922306179,
+  "severity": 1,
+  "storage_partition": "harmonic",
+  "symbol": "BUTTERFLY_SYNTH",
+  "timeframe": "1d",
+  "title": "BUTTERFLY synthetic reference",
+  "ts_max": "2026-01-12T09:00:00",
+  "ts_min": "2026-01-01T09:00:00"
+}

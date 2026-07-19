@@ -1,0 +1,93 @@
+{
+  "bars_rendered": 50,
+  "chart_data_path": "/data/csc/raw/ds1_d0c11007ab04de0caf9b5f4445d070945d0636b49875ba05fbe5c94c984728f2/market=stocks/region=KR/symbol=000050.KS/timeframe=1d/contract=ohlcv-v1/ohlcv.parquet",
+  "explain": {
+    "P1": {
+      "bar_index": 5973,
+      "ts_ns": 1698364800000000000,
+      "value": 9500.0
+    },
+    "P2": {
+      "bar_index": 5980,
+      "ts_ns": 1699315200000000000,
+      "value": 8500.0
+    },
+    "R1": {
+      "bar_index": 5973,
+      "ts_ns": 1698364800000000000,
+      "value": 38.130486387732915
+    },
+    "R2": {
+      "bar_index": 5980,
+      "ts_ns": 1699315200000000000,
+      "value": 59.445146400000304
+    },
+    "contract_catalog_digest": "sha256:01e9d687cd03c39a9e33c01fce1ed9aedfadaafd1371a6bc3f839022aee070fc",
+    "divergence_type": "bearish_hidden",
+    "event_id": "evt1_ee1ef365a97e80d54b7dbba28b102fafc9ebe132a42fed19d10b31fffe6d3aff",
+    "knowable_ts_ns": 1699574400000000000,
+    "signal_ts_ns": 1699488000000000000,
+    "source_dataset_id": "ds1_d0c11007ab04de0caf9b5f4445d070945d0636b49875ba05fbe5c94c984728f2",
+    "source_note": "canonical /data/csc/raw fallback; /data/research/raw is not this sealed runtime generation",
+    "source_path": "/data/csc/raw/ds1_d0c11007ab04de0caf9b5f4445d070945d0636b49875ba05fbe5c94c984728f2/market=stocks/region=KR/symbol=000050.KS/timeframe=1d/contract=ohlcv-v1/ohlcv.parquet",
+    "step": "STEP025"
+  },
+  "generated_at": "2026-07-13T04:55:29.388431+00:00",
+  "highlight_candle_in_window": true,
+  "highlight_candle_ts": "2023-11-09T00:00:00+00:00",
+  "image_path": "/data/test/chart_images/STEP025/pivot-divergence/bearish_hidden/000050.KS__1d__20231109T000000Z__bearish_hidden__evt1_ee1ef365a97e.png",
+  "indicators": {
+    "fibband_levels_present": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "fibband_levels_requested": [
+      0,
+      13
+    ],
+    "fibband_style": "tradingview",
+    "pivot_line_color": "#000000",
+    "pivot_line_width": 2.2,
+    "pivot_lines_enabled": true,
+    "pivot_markers_present": false,
+    "show_fibband": true,
+    "show_rsi": true,
+    "show_volume": true,
+    "trendline_overlay_expected": true
+  },
+  "latest_values": {
+    "close": 8500.0,
+    "rsi": 57.39503705217748,
+    "volume": 2866.0
+  },
+  "market": "stocks",
+  "model_version": null,
+  "review_checks": [
+    "Confirm the highlighted candle matches the intended signal timestamp.",
+    "Confirm the price panel, FibBand, and volume describe the same bar window.",
+    "Confirm the textbox metadata matches the rule, score, and explain payload you expect.",
+    "Confirm the volume panel is populated and any spike or drought is explainable.",
+    "Confirm RSI context is consistent with the signal rationale (latest RSI=57.40)."
+  ],
+  "rule_id": "rsi_divergence_bearish_hidden",
+  "score": null,
+  "severity": null,
+  "storage_partition": "kr",
+  "symbol": "000050.KS",
+  "timeframe": "1d",
+  "title": "STEP025 bearish_hidden: P1/P2 and R1/R2",
+  "ts_max": "2023-11-23T09:00:00",
+  "ts_min": "2023-09-08T09:00:00"
+}
